@@ -1,0 +1,264 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hiruni Wasundara | Biomedical Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Animation for Name and Job */
+        .hero h1 {
+            opacity: 0;
+            animation: slideDownFade 1s ease-out forwards;
+        }
+
+        .hero h3 {
+            opacity: 0;
+            animation: slideUpFade 1s ease-out 0.5s forwards;
+        }
+
+        @keyframes slideDownFade {
+            from { opacity: 0; transform: translateY(-30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes slideUpFade {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Logo H Letter -->
+<div class="logo">H</div>
+
+<!-- Dark Mode Toggle -->
+<button class="dark-btn" onclick="toggleDarkMode()">🌙</button>
+<button class="dark-btn" id="dark-btn" onclick="toggleDarkMode(); toggleIcon()">☀️</button>
+
+<!-- Header -->
+<header class="hero">
+
+    <h1>K.M. Hiruni Wasundara</h1>
+    <h3>Biomedical Technologist | Graphic Designer</h3>
+
+    <a href="My CV.pdf" download class="cv-btn">
+        <i class="fas fa-download"></i> Download CV
+    </a>
+
+</header>
+
+<!-- Navigation -->
+<nav class="navbar">
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<!-- About -->
+<section id="about" class="about-section fade-in">
+    <div class="about-container">
+
+        <div class="about-image">
+            <img src="profile photo.jpeg" alt="Hiruni Wasundara">
+        </div>
+
+        <div class="about-text">
+            <h2>About Me</h2>
+            <p>
+                I am a dedicated Biomedical Technologist with a strong background in medical technology
+                and hands-on experience in laboratory operations. After completing my Bachelor of Health
+                Science in Biomedical Technology, I am currently working as a Biomedical Technologist
+                while managing my own laboratory.
+            </p>
+            <p>
+                In addition to my scientific career, I also work as a Graphic Designer in a professional
+                corporate environment. This combination allows me to bridge healthcare and creativity,
+                delivering innovative and effective solutions.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- Education -->
+<section id="education" class="fade-in">
+    <h2>Education</h2>
+    <div class="timeline">
+
+        <div class="timeline-item">
+            <h4>Bachelor of Health Science (BHSc) in Biomedical Technology</h4>
+            <span>Gampaha Wickramarachchi University, Sri Lanka | 2020 - 2024</span>
+            <p>Completed a 4-year degree program focused on biomedical instruments, laboratory techniques, and medical informatics.</p>
+        </div>
+
+        <div class="timeline-item">
+            <h4>Higher Secondary Education</h4>
+            <span>Science Stream | 2018 - 2020</span>
+            <p>Focused on Biology, Chemistry, and Physics, achieving excellent grades.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- Skills -->
+<section id="skills">
+    <h2>Technical Skills</h2>
+    <div class="skills-grid">
+        <div class="skill-item">Biomedical Lab Techniques</div>
+        <div class="skill-item">Medical Instrumentation</div>
+        <div class="skill-item">Laboratory Management</div>
+        <div class="skill-item">Graphic Design (Adobe Photoshop, Illustrator)</div>
+        <div class="skill-item">Data Analysis & Visualization</div>
+    </div>
+</section>
+
+<!-- Projects -->
+<section id="projects">
+    <h2>Academic Projects</h2>
+    <div class="projects-grid">
+
+        <div class="project-item">
+            <img src="EMG.jpeg" alt="EMG Measurement Analysis">
+            <h4>EMG Measurement Analysis</h4>
+            <p>Designed and implemented a system to record and analyze electromyography signals for muscle activity research.</p>
+        </div>
+
+        <div class="project-item">
+            <img src="Medical Instrument.jpeg" alt="Medical Instrument Development">
+            <h4>Medical Instrument Development</h4>
+            <p>Built a prototype biomedical sensor system to measure patient vitals accurately.</p>
+        </div>
+
+        <div class="project-item">
+            <img src="lab automation system.jpeg" alt="Lab Automation System">
+            <h4>Lab Automation System</h4>
+            <p>Developed a workflow to automate common lab procedures to improve efficiency and accuracy.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- Experience -->
+<section id="experience" class="fade-in">
+    <h2>Professional Experience</h2>
+    <div class="timeline">
+
+        <div class="timeline-item">
+            <h4>Biomedical Technologist</h4>
+            <span>Own Laboratory | 2024 - Present</span>
+            <p>Managing laboratory operations, performing diagnostic tests, and maintaining biomedical equipment with accuracy and efficiency.</p>
+        </div>
+
+        <div class="timeline-item">
+            <h4>Graphic Designer</h4>
+            <span>ABC Design Company | 2023 - Present</span>
+            <p>Creating visual content, branding materials, and digital designs for corporate clients while balancing biomedical responsibilities.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="contact-section">
+    <h2>Contact Information</h2>
+    <div class="contact-box">
+
+        <a href="mailto:hiruniwasundara263@gmail.com" class="contact-item fade-in">
+            <i class="fas fa-envelope"></i>
+            <div>
+                <h4>Email</h4>
+                <p>hiruniwasundara263@gmail.com</p>
+            </div>
+        </a>
+
+        <a href="tel:+94713062290" class="contact-item fade-in">
+            <i class="fas fa-phone-alt"></i>
+            <div>
+                <h4>Phone</h4>
+                <p>+94 713062290</p>
+            </div>
+        </a>
+
+        <a href="https://gwu.ac.lk" target="_blank" class="contact-item fade-in">
+            <i class="fas fa-graduation-cap"></i>
+            <div>
+                <h4>University</h4>
+                <p>Gampaha Wickramarachchi University</p>
+            </div>
+        </a>
+
+        <a href="https://www.google.com/maps/place/Gampaha,+Sri+Lanka" target="_blank" class="contact-item fade-in">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+                <h4>Location</h4>
+                <p>Gampaha, Sri Lanka</p>
+            </div>
+        </a>
+    </div>
+
+    <!-- Social Media -->
+    <div class="social-links fade-in">
+        <a href="https://www.facebook.com/hiruni wasundara" target="_blank" class="facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/wasundarahiruni" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/Hiruni Wasundara" target="_blank" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/wasundara29" target="_blank" class="github"><i class="fab fa-github"></i></a>
+    </div>
+</section>
+
+<!-- Send Me a Message -->
+<section id="message" class="message-section fade-in">
+    <h2>Send Me a Message</h2>
+    <p>If you would like to know more details, feel free to send me a message.</p>
+
+    <form class="message-form" onsubmit="return sendMessage()">
+
+        <div class="input-group">
+            <input type="text" id="name" required>
+            <label>Your Name</label>
+        </div>
+
+        <div class="input-group">
+            <input type="email" id="email" required>
+            <label>Email Address</label>
+        </div>
+
+        <div class="input-group">
+            <textarea id="messageText" rows="5" required></textarea>
+            <label>Your Message</label>
+        </div>
+
+        <button type="submit">Send Message</button>
+    </form>
+
+    <p id="success-msg"></p>
+</section>
+
+<footer>
+    <p>© 2025 | K.M. Hiruni Wasundara</p>
+</footer>
+
+<!-- Back to Top Button -->
+<button id="backToTop" class="back-to-top"><i class="fas fa-arrow-up"></i></button>
+
+<script>
+    function toggleIcon() {
+        const btn = document.getElementById("dark-btn");
+        if (btn.textContent === "☀️") {
+            btn.textContent = "🌙";
+        } else {
+            btn.textContent = "☀️";
+        }
+    }
+</script>
+<script src="script.js"></script>
+</body>
+</html>
